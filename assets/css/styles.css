@@ -1,0 +1,33 @@
+.container{
+    background-color:darkgreen;
+    float:left;
+    width:76%;
+    background-image: url('../images/dragon2.jpg')
+}
+h1{
+    color:white;
+    background-color:orangered;
+}
+#Aroo{
+    color:green;
+    background-color: burlywood;
+}
+#Aroo2{
+    color:purple;
+    background-color:forestgreen;
+    height: 100px;
+}
+#Aroo3{
+    color:black;
+    background-color:skyblue;
+    
+}
+#Aroo5{
+    color:white;
+    background-color:teal
+}
+#Aroo6{
+    color:white;
+    background-color:teal;
+    height: 100px;
+}
