@@ -17,18 +17,17 @@ function reset(){
     crystal2= Math.floor(Math.random()*11+1);
     crystal3= Math.floor(Math.random()*11+1);
     crystal4= Math.floor(Math.random()*11+1);
-    userTotal= 0;
+    playerTotal= 0;
     $('#totalscore2').text(playerTotal);
-    } 
-
-
+    } ;
 if (playerTotal===computerNumber) {
     wins++;
     $(".wins").html;
-} else {
-    
-}
-$("#wins").html("Wins: " + CrystalGame.wins);
-$("#losses").html("Lost: " + CrystalGame.losses);
-
+    reset();
+};
+if(playerTotal>computerNumber){
+    losses++;
+    $(".losses").html;
+    reset();
+};
 });
