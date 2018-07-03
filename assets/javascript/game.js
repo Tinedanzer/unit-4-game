@@ -25,12 +25,14 @@ function reset(){
     } ;
 function winner() {   
     victory++;
-    $("#wins").html;
+    $("#wins").text(victory);
+    $("#taunt").text("You Won!");
     reset();
     };
 function loser(){
     losses++;
-    $("#losses").html;
+    $("#losses").text(losses);
+    $("#taunt").text("really dude?");
     reset();
     };
 
