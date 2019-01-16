@@ -1,17 +1,16 @@
 $( document ).ready(function(){
-var crystal1= Math.floor(Math.random()*11+1);
-var crystal2= Math.floor(Math.random()*11+1);
-var crystal3= Math.floor(Math.random()*11+1);
-var crystal4= Math.floor(Math.random()*11+1);
-var computerNumber=Math.floor(Math.random()*102+19);
-// document.getElementById('what').innerHTML=computerNumber;
+// establishes the random number assigned to each crystal
+let crystal1= Math.floor(Math.random()*11+1);
+let crystal2= Math.floor(Math.random()*11+1);
+let crystal3= Math.floor(Math.random()*11+1);
+let crystal4= Math.floor(Math.random()*11+1);
+let computerNumber=Math.floor(Math.random()*102+19);
 $('#what').text(computerNumber);
-var playerTotal= 0; 
-var victory= 0;
+let playerTotal= 0; 
+let victory= 0;
 
-var losses = 0;
-
-// $("#totalscore2").text(crystal1);
+let losses = 0;
+// resets the game, reassigning crystal numbers
 function reset(){
     computerNumber=Math.floor(Math.random()*101+19);
     console.log(computerNumber)
@@ -35,7 +34,7 @@ function loser(){
     $("#taunt").text("really dude?");
     reset();
     };
-
+// assigning buttons and properties
 $('#crystal1').on ('click', function(){
     playerTotal = playerTotal + crystal1;
     $('#totalscore2').text(playerTotal);
